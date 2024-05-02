@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <div class="nav_toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav_logo">
@@ -46,6 +49,9 @@
 
             <div class="btn_share">
                 <i class="uil uil-share-alt social_share"></i>
+            </div>
+            <div class="nav_close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -80,21 +86,6 @@
                 </div>
                 <div class="my_info">
                     <div class="info_item">
-                        <i class="uil uil-facebook-messenger info_icon"></i>
-                        <div>
-                            <h3 class="info_title">Menssager</h3>
-                            <span class="info_subtitle">beatriz.carletti.98</span>
-                        </div>
-                    </div>
-                    <div class="info_item">
-                        <i class="uil uil-whatsapp info_icon"></i>
-
-                        <div>
-                            <h3 class="info_title">Whatsapp</h3>
-                            <span class="info_subtitle">+015 (19) 999716097</span>
-                        </div>
-                    </div>
-                    <div class="info_item">
                         <i class="uil uil-envelope info_icon"></i>
 
                         <div>
@@ -112,7 +103,7 @@
             <h2 data-heading="Minha Introdução" class="section_title">Quem sou</h2>
 
             <div class="about_container container grid">
-                <img src="assets/img/perfil.jpeg" alt="" class="about_img">
+                <img src="assets/img/perfil2.jpeg" alt="" class="about_img">
 
                 <div class="about_data">
                     <h3 class="about_heading"> Oi, meu nome é Beatriz Carletti</h3>
@@ -152,41 +143,436 @@
                     <div class="timeline">
                         <div class="timeline_item">
                             <div class="circle_dot"></div>
-                                <h3 class="timeline_title">Cruzeiro do Sul</h3>
-                                <p class="timeline_text">Análise e Desenvolvimento de Sistemas</p>
-                                <span class="timeline_date"><i class="uil uil-calendar-alt"></i>
-                                    2022-Julho de 2024
-                                </span>
-                            </div>
+                            <h3 class="timeline_title">Cruzeiro do Sul</h3>
+                            <p class="timeline_text">Análise e Desenvolvimento de Sistemas</p>
+                            <span class="timeline_date"><i class="uil uil-calendar-alt"></i>
+                                2022-Julho de 2024
+                            </span>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
-                <!--======SKILLS=======-->
+        <!--======SKILLS=======-->
         <section class="skills section" id="skills">
             <h2 data-heading="Minhas Habilidades" class="section_title">Minha Experiência</h2>
 
             <div class="skills_container container grid">
                 <div class="skills_tabs">
-                    <div class="skills_header">
-                        <i class="uil uil-brackets-curly skills_icon"></i>
+                    <div class="skills_header skills_active" data-target="#Hard">
+                        <i class="uil uil-desktop skills_icon"></i>
 
                         <div>
-                            <h1 class="skills_title"></h1>
-                            <span class="skills_subtitle"></span>
+                            <h1 class="skills_title"> Hard Skills</h1>
+                            <span class="skills_subtitle">Habilidades técnicas;</span>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+
+                    </div>
+
+                    <div class="skills_header" data-target="#Soft">
+                        <i class="uil uil-user-plus skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">Soft Skills</h1>
+                            <span class="skills_subtitle">Habilidades Comportamentais</span>
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <div class="skills_group skills_active" data-content id="Hard">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills number">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills number">80%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JS</h3>
+                                    <span class="skills number">80%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Type-Script</h3>
+                                    <span class="skills number">80%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Node</h3>
+                                    <span class="skills number">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Fastify</h3>
+                                    <span class="skills number">60%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills number">87%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 87%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">GIT</h3>
+                                    <span class="skills number">95%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Postgres</h3>
+                                    <span class="skills number">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Docker</h3>
+                                    <span class="skills number">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_group" data-content id="Soft">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Comunicação</h3>
+                                    <span class="skills number">90%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Trabalho em equipe</h3>
+                                    <span class="skills number">95%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Resolução de Problema</h3>
+                                    <span class="skills number">45%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 45%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Pensamento Crítico</h3>
+                                    <span class="skills number">50%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Gestão do tempo e organização</h3>
+                                    <span class="skills number">85%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Autoaprendizagem</h3>
+                                    <span class="skills number">75%</span>
+                                </div>
+
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </section>
+
+        <!--======Portfolio=======-->
+
+        <section class="work section" id="projects">
+            <h2 data-heading="Meu Portifólio" class="section_title">Projetos</h2>
+
+            <div class="work_filters">
+                <span class="work_item active-work" data-filter="all">Todos</span>
+                <span class="work_item" data-filter=".meusprojetos">Meus projetos</span>
+                <span class="work_item" data-filter=".projetoscomunidade">Projetos de eventos da Comunidade</span>
+            </div>
+
+            <div class="work_container container grid">
+                <div class="work_card mix meusprojetos">
+                    <img src="/assets/img/previsao_do_tempo.png" alt="" class="work_img">
+                    <h3 class="work_title">Seu tempo</h3>
+                    <span class="work_button">Demo
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title"> Consulta Meteriológica.</h3>
+                        <p class="details_description">Site onde se pode consultar as previsões do tempo utilizando como
+                            API pública Weather</p>
+                        <ul class="details_info">
+                            <li>Criado - <span>8 de Abril 2024</span></li>
+                            <li>Tecnologias - <span>Vite como bundler, React com TypeScript e CSS para o frontend,
+                                    ESLint para linting do código.</span></li>
+                            <li>Visualização - <span><a target="_blank"
+                                        href="https://previs-o-do-tempo-mu.vercel.app/">Vercel</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix meusprojetos">
+                    <img src="/assets/img/todo_list.png" alt="" class="work_img">
+                    <h3 class="work_title">Todo-List</h3>
+                    <span class="work_button">Demo
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title">Site de gerencimento de tarefas.</h3>
+                        <p class="details_description">Site onde se pode criar uma lista de tarefas, adicionando novas
+                            tarefas,marcando tarefas como concluídas, filtrando as tarefas e as removendo.</p>
+                        <ul class="details_info">
+                            <li>Criado - <span>01 de Março 2024</span></li>
+                            <li>Tecnologias - <span>Vite como bundler, React com TypeScript e CSS para o frontend,
+                                    ESLint para linting do código.</span></li>
+                            <li>Visualização - <span><a target="_blank"
+                                        href="https://todo-list-one-iota-35.vercel.app/">Vercel</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix projetoscomunidade">
+                    <img src="./assets/img/link_tree.png" alt="" class="work_img">
+                    <h3 class="work_title">Link Tree</h3>
+                    <span class="work_button">Demo
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title">Site de gerenciamneto dos meus links pessoais.</h3>
+                        <p class="details_description">Programa exclusivo e gratuito, promovido pela Rocketseat para
+                            ensino de tecnologias WEB onde foi realizado um site para acersso rápido a minhas redes
+                            sociais e projetos.</p>
+                        <ul class="details_info">
+                            <li>Criado - <span>05 de Outubro 2023</span></li>
+                            <li>Tecnologias - <span>Esse projeto foi desenvolvido com as seguintes tecnologias: HTML e
+                                    CSS, JavaScript e Figma.</span></li>
+                            <li>Visualização - <span><a target="_blank"
+                                        href="https://meus-links-sigma.vercel.app/">Vercel</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work_card mix projetoscomunidade">
+                    <img src="./assets/img/cartao.png" alt="" class="work_img">
+                    <h3 class="work_title">Cartão de Crédito</h3>
+                    <span class="work_button">Demo
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title">Componente que simula o formulário de preenchimento de cartão de
+                            crédito</h3>
+                        <p class="details_description">Evento exclusivo e gratuito, promovido pela Rocketseat para
+                            ensino de tecnologias WEB onde foi realizado uma prova de conceito de uma interface de
+                            cadastramento de cartão de crédito.</p>
+                        <ul class="details_info">
+                            <li>Criado - <span>04 de Abril 2022</span></li>
+                            <li>Tecnologias - <span>Esse projeto foi desenvolvido com as seguintes tecnologias:HTML e
+                                    CSS, JavaScript, JSON, Node, NPM Vite e iMask.</span></li>
+                            <li>Visualização - <span><a target="_blank"
+                                        href="https://explorer-lab-js-dom-three.vercel.app/">Vercel</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--======Portfolio Popup=======-->
+
+        <div class="portfolio_popup">
+            <div class="portfolio_popup-inner">
+                <div class="portfolio_popup-content grid">
+                    <span class="portfolio_popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp_thumbnail">
+                        <img src="assets/img/previsao_do_tempo.png" alt="" class="portfolio_popup-img">
+                    </div>
+                    <div class="portfolio_popup-info">
+                        <div class="portfolio_popup-subtitle">Meus projetos - <span> Seu tempo</span></div>
+                        <div class="portfolio_popup-body">
+                            <h3 class="details_title">Consulta Meteriológica.</h3>
+                            <p class="details_description">Site onde se pode consultar as previsões do tempo utilizando
+                                como API pública Weather</p>
+                            <ul class="details_info">
+                                <li>Criado - <span>8 de Abril 2024</span></li>
+                                <li>Tecnologias - <span>Vite como bundler, React com TypeScript e CSS para o frontend,
+                                        ESLint para linting do código.</span></li>
+                                <li>Visualização - <span><a target="_blank"
+                                            href="https://previs-o-do-tempo-mu.vercel.app/">Vercel</a></span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--======CONTACT=======-->
+        <section class="contact section" id="contact">
+            <h2 data-heading="Entre em contato" class="section_title">Contate-me</h2>
+
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <div class="contact_info">
+                        <div class="contact_card">
+                            <i class="uil uil-linkedin contact_card-icon"></i>
+                            <h3 class="contact_card-title">Linkedin</h3>
+                            <span class="contact_card-data">Beatriz Carletti</span>
+                            <span class="contact_button">
+                                Escreva-me <i class="uil uil-arrow-right contact_button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_content">
+                    <form action="" class="contact_form">
+                        <div class="input_container">
+                            <input type="text" class="input">
+                            <label for="">Nome completo</label>
+                            <span>Nome completo</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input_container">
+                            <input type="tel" class="input">
+                            <label for="">Telefone</label>
+                            <span>Telefone</span>
+                        </div>
+                        <div class="input_container textarea">
+                            <textarea name="" id="" class="input"></textarea>
+                            <label for="">Mensagem</label>
+                            <span>Mensagem</span>
+                        </div>
+                        <button type="submit" class="button"><i class="uil uil-navigator button_icon"></i>
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <!--======FOOTER=======-->
+
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Beatriz</h1>
+                        <span class="footer_subtitle">Desenvolvedora de Software</span>
+                    </div>
+
+                    <div class="footer_socials">
+                        <a href="https://www.linkedin.com/in/beatriz-carletti-89b7462bb/" target="_blank"
+                            class="footer_social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/biacarletti" target="_blank" class="footer_social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
     </main>
 
 
 
-    <script></script>
-    <script></script>
+    <script src="assets/js/mixitup.min.js"></script>
+
     <script src="assets/js/main.js"></script>
 </body>
 
