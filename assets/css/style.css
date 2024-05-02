@@ -214,6 +214,7 @@ font-size: 1.5rem;
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .nav_close {
